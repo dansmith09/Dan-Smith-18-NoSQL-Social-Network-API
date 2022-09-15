@@ -17,7 +17,7 @@ const thoughtSchema = new Schema(
     username: [
       {
         type: Schema.Types.ObjectId, /// Unsure if this is correct. Maybe it doesnt need to be in array? Becasue only 1 user per thought
-        ref: 'Thought',
+        ref: 'User',
       },
     ],
     reactions: [reactionSchema],
