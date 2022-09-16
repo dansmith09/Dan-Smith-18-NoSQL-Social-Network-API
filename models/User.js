@@ -16,6 +16,7 @@ const userSchema = new Schema(
       //   validator: () => Promise.resolve(false), /// Double check this when sever gets running
       //   message: 'Email validation failed'
       // }
+      match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
     },
     thoughts: [
       {

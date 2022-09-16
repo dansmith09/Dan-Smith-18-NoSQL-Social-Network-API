@@ -14,12 +14,10 @@ const thoughtSchema = new Schema(
       type: Date,
       default: Date.now, /// Use a getter method to format the timestamp on query
     },
-    username: [
-      {
-        type: Schema.Types.ObjectId, /// Unsure if this is correct. Maybe it doesnt need to be in array? Becasue only 1 user per thought
-        ref: 'User',
-      },
-    ],
+    username: {
+      type: String,
+      required: true,
+    },
     reactions: [reactionSchema],
   },
   {
@@ -30,7 +28,7 @@ const thoughtSchema = new Schema(
   }
 );
 
-thoughtSchema.virtual('friendCount').get(function () {
+thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
 

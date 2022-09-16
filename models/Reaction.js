@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose');
+const { Schema, Types } = require('mongoose');
 
 const reactionSchema = new Schema(
   {
@@ -12,12 +12,10 @@ const reactionSchema = new Schema(
       required: true,
       maxLength: 280
     },
-    username: [
-      {
-        type: Schema.Types.ObjectId, /// Unsure if this is correct. Maybe it doesnt need to be in array? Becasue only 1 user per reaction
-        ref: 'Thought',
-      },
-    ],
+    username: {
+      type: String,
+      required: true,
+    },
     createdAt: {
       type: Date,
       default: Date.now, /// Use a getter method to format the timestamp on query
