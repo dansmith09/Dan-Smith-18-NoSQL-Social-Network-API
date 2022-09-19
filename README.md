@@ -47,18 +47,10 @@ npm start
 **Video Demonstration**
 ---
 
-[![IMAGE ALT TEXT](https://www.youtube.com/watch?v=IDu-Dc2LTvw/0.jpg)](https://www.youtube.com/watch?v=IDu-Dc2LTvw "Tech Blog - Full Stack Application Node Express Handlebars Sequelize Heroku JawsDB")
-
-
-Click the image above or the link below to see the walkthrough video:
+Click link below to see the walkthrough video:
 
 https://www.youtube.com/watch?v=IDu-Dc2LTvw
 
-**Live Website**
----
-
-Link:
-https://immense-brook-45307.herokuapp.com/
 
 **Technologies Used**
 ---
