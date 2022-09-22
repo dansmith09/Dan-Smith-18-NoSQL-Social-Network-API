@@ -13,7 +13,7 @@ Users:
 - View a specific user - GET /api/users/userId
 - Create a new user - POST /api/users/
 - Update a users information - POST /api/users/userId
-- Delete a user - DELETE /api/users/userId
+- Delete a user - DELETE /api/users/userId *And deletes all thoughts associated to that user
 
 Friends:
 - Add a friend - POST api/users/UserId/friends/FriendId
